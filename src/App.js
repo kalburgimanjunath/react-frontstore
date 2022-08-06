@@ -6,12 +6,13 @@ import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import HowItWorks from './pages/static/HowItWorks';
 import ProductDetail from './pages/ProductDetail';
+import CategoryWise from './components/CategoryWise';
 export default function App() {
   const ProductList = [
     {
       id: 1,
       title: 'Product 1',
-      techStack: ['reactjs', 'javascript', 'es6'],
+      techStack: ['grid', 'javascript', 'es6'],
       productImage: 'https://picsum.photos/200/300',
       demoURL: 'https://picsum.photos/200/300',
       price: '1000',
@@ -19,7 +20,7 @@ export default function App() {
     {
       id: 2,
       title: 'Product 2',
-      techStack: ['reactjs', 'javascript', 'es6'],
+      techStack: ['reactjs', 'list', 'es6'],
       productImage: 'https://picsum.photos/seed/picsum/200/300',
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
       price: '2000',
@@ -32,9 +33,33 @@ export default function App() {
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
       price: '2000',
     },
+    {
+      id: 6,
+      title: 'Product 3',
+      techStack: ['reactjs', 'javascript', 'es6'],
+      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      price: '2000',
+    },
+    {
+      id: 4,
+      title: 'Product 3',
+      techStack: ['reactjs', 'javascript', 'es6'],
+      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      price: '2000',
+    },
+    {
+      id: 5,
+      title: 'Product 3',
+      techStack: ['reactjs', 'javascript', 'es6'],
+      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      price: '2000',
+    },
   ];
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Header />
       <div style={{ flex: 1, display: 'flex' }}>
         <Sidebar />
@@ -43,6 +68,10 @@ export default function App() {
           <Route
             path="/productdetail/:id"
             element={<ProductDetail ProductList={ProductList} />}
+          />
+          <Route
+            path="categorywise/:id"
+            element={<CategoryWise ProductList={ProductList} />}
           />
           <Route path="" element={<Main ProductList={ProductList} />} exact />
         </Routes>

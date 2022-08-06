@@ -9,7 +9,7 @@ export default function Main({ ProductList }) {
         <Hero />
       </div>
       <div>
-        <FilterList products={ProductList} />
+        <FilterList products={ProductList} categorysearch="list" />
       </div>
       <Footer />
     </div>

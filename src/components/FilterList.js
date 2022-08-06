@@ -6,7 +6,8 @@ export const TextStack = ({ items }) => {
     return <span className="badge text-bg-success">{item}</span>;
   });
 };
-export default function FilterList({ products }) {
+export default function FilterList({ products, categorysearch }) {
+  // let categorysearch = 'list';
   const category = [
     'All',
     'Element',
@@ -21,15 +22,26 @@ export default function FilterList({ products }) {
     'Page',
     'Other',
   ];
+  let filterData;
+  if (categorysearch !== 'all') {
+    filterData = products.filter((item) => {
+      return item.techStack.find((tech) => {
+        return tech == categorysearch.toLowerCase();
+      });
+    });
+    // console.log(filterData);
+  } else {
+    filterData = products;
+  }
 
   return (
     <>
       <Category Category={category} />
       <div className="card-group">
-        {products.map((item) => {
+        {filterData.map((item) => {
           return (
             <Link to={`productdetail/${item.id}`}>
-              <div className="card">
+              <div className="card" style={{ margin: 10 }}>
                 <img
                   src={item.productImage}
                   size={300}

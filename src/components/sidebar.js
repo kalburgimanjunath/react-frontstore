@@ -1,11 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Sidebar() {
+  const category = [
+    'Element',
+    'Form',
+    'Marketing',
+    'Grid',
+    'List',
+    'Navigation',
+    'Modal',
+    'Social',
+    'Complex',
+    'Page',
+    'Other',
+  ];
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
       style={{ width: 280, backgroundColor: '#202020', color: '#fff' }}
     >
-      <a
+      {/* <a
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
@@ -14,104 +28,28 @@ export default function Sidebar() {
         </svg>
         <span className="fs-4">Sidebar</span>
       </a>
-      <hr />
+      <hr /> */}
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a href="#" className="nav-link active" aria-current="page">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#home"></use>
-            </svg>
-            All
-          </a>
+          <Link to="">
+            <a href="#" className="nav-link active" aria-current="page">
+              All
+            </a>
+          </Link>
         </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#speedometer2"></use>
-            </svg>
-            Element
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#table"></use>
-            </svg>
-            Forms
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#grid"></use>
-            </svg>
-            Marketing
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Grid
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            List
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Navigation
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Modal
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Social
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Complex
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Page Other
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Other
-          </a>
-        </li>
+        {category.map((item, index) => {
+          return (
+            <li>
+              <Link
+                to={`./categorywise/${item}`}
+                className="nav-link text-white"
+              >
+                {item}
+              </Link>
+            </li>
+          );
+        })}
+
         {/* <li>
           <a href="#" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16">

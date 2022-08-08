@@ -31,6 +31,21 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="./dashboard">
+                Dashboard
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="./projects">
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="./marketplace">
+                MarketPlace
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="sell">
                 Sell Components
               </Link>

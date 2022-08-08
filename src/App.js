@@ -7,6 +7,9 @@ import { Routes, Route } from 'react-router-dom';
 import HowItWorks from './pages/static/HowItWorks';
 import ProductDetail from './pages/ProductDetail';
 import Upload from './pages/Upload';
+import Dashboard from './pages/dashboard/Dashboard';
+import Projects from './pages/projects/Projects';
+import MarketPlace from './pages/marketplace/MarketPlace';
 import CategoryWise from './components/CategoryWise';
 export default function App() {
   const ProductList = [
@@ -80,6 +83,9 @@ export default function App() {
             />
             <Route path="/upload" element={<Upload />} />
             <Route path="" element={<Main ProductList={ProductList} />} exact />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/marketplace" element={<MarketPlace />} exact />
           </Routes>
         </div>
       </div>

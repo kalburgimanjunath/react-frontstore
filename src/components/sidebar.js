@@ -62,14 +62,6 @@ export default function Sidebar() {
             </li>
           );
         })}
-        {/* <li>
-          <a href="#" className="nav-link text-white">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use xlink:href="#people-circle"></use>
-            </svg>
-            Modal Social Complex Page Other
-          </a>
-        </li> */}
       </ul>
       <hr />
       <div className="dropdown">

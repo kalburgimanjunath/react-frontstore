@@ -10,18 +10,23 @@ export default function ProductDetail({ ProductList }) {
   return (
     <div className="page">
       <Link to="../">Back to Page</Link>
-      <div>{filterData[0].title}</div>
+      <div>
+        <h3>{filterData[0].title}</h3>
+      </div>
       <div>
         <TextStack items={filterData[0].techStack} />
         <button
+          className="btn btn-danger"
           type="button"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
           View Demo
         </button>
-        <button>Subscribe to Unlock</button> or
-        <button>Buy for {filterData[0].price}</button>
+        <button className="btn btn-secondary">Subscribe to Unlock</button> or
+        <button className="btn btn-secondary">
+          Buy for {filterData[0].price}
+        </button>
       </div>
       <div>
         <img src={filterData[0].productImage} width={300} />

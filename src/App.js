@@ -6,6 +6,7 @@ import Header from './components/Header';
 import { Routes, Route } from 'react-router-dom';
 import HowItWorks from './pages/static/HowItWorks';
 import ProductDetail from './pages/ProductDetail';
+import Upload from './pages/Upload';
 import CategoryWise from './components/CategoryWise';
 export default function App() {
   const ProductList = [
@@ -59,22 +60,28 @@ export default function App() {
     },
   ];
   return (
-    <div className="container-fluid">
-      <Header />
+    <div className="container-fluid" style={{ padding: 0 }}>
       <div style={{ flex: 1, display: 'flex' }}>
         <Sidebar />
-        <Routes>
-          <Route path="/howitworks" element={<HowItWorks />} />
-          <Route
-            path="/productdetail/:id"
-            element={<ProductDetail ProductList={ProductList} />}
-          />
-          <Route
-            path="categorywise/:id"
-            element={<CategoryWise ProductList={ProductList} />}
-          />
-          <Route path="" element={<Main ProductList={ProductList} />} exact />
-        </Routes>
+
+        <div>
+          <div style={{ flex: 1 }}>
+            <Header />
+          </div>
+          <Routes>
+            <Route path="/howitworks" element={<HowItWorks />} />
+            <Route
+              path="/productdetail/:id"
+              element={<ProductDetail ProductList={ProductList} />}
+            />
+            <Route
+              path="categorywise/:id"
+              element={<CategoryWise ProductList={ProductList} />}
+            />
+            <Route path="/upload" element={<Upload />} />
+            <Route path="" element={<Main ProductList={ProductList} />} exact />
+          </Routes>
+        </div>
       </div>
     </div>
   );

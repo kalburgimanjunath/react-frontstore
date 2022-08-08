@@ -14,27 +14,39 @@ export default function Sidebar() {
     'Page',
     'Other',
   ];
+  const icons = [
+    'bi-cursor',
+    'bi-check2-square',
+    'bi-file-image',
+    'bi-grid',
+    'bi-list',
+    'bi-card-list',
+    'bi-images',
+    'bi-chat-dots',
+    'bi-calendar-event',
+    'bi-file-break',
+    'bi-app',
+  ];
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
       style={{ width: 280, backgroundColor: '#202020', color: '#fff' }}
     >
-      {/* <a
+      <a
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
       >
         <svg className="bi pe-none me-2" width="40" height="32">
           <use xlink:href="#bootstrap"></use>
         </svg>
-        <span className="fs-4">Sidebar</span>
+        <span className="fs-4">Front Work</span>
       </a>
-      <hr /> */}
+      <hr />
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <Link to="">
-            <a href="#" className="nav-link active" aria-current="page">
-              All
-            </a>
+          <Link to="" className="nav-link active" aria-current="page">
+            <i className="bi bi-bricks"></i>
+            <span style={{ paddingLeft: 10 }}>All</span>
           </Link>
         </li>
         {category.map((item, index) => {
@@ -44,12 +56,12 @@ export default function Sidebar() {
                 to={`./categorywise/${item}`}
                 className="nav-link text-white"
               >
-                {item}
+                <i className={`bi ${icons[index]}`}></i>
+                <span style={{ paddingLeft: 10 }}>{item}</span>
               </Link>
             </li>
           );
         })}
-
         {/* <li>
           <a href="#" className="nav-link text-white">
             <svg className="bi pe-none me-2" width="16" height="16">

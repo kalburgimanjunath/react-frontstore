@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        {/* <a className="navbar-brand" href="#">
           Front Work
-        </a>
+        </a> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -31,11 +31,11 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Pricing
-              </a>
+              <Link className="nav-link" to="sell">
+                Sell Components
+              </Link>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
                 href="#"
@@ -62,7 +62,7 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

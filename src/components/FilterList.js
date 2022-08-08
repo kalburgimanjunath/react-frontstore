@@ -33,6 +33,7 @@ export default function FilterList({ products, categorysearch }) {
   } else {
     filterData = products;
   }
+  // console.log(categorysearch);
 
   return (
     <>

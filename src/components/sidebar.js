@@ -27,6 +27,14 @@ export default function Sidebar() {
     'bi-file-break',
     'bi-app',
   ];
+  const singleTemplate = [
+    'AllTemplates',
+    'Profile',
+    'Landing',
+    'Form',
+    'Portfolio',
+    'Sanctioned',
+  ];
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark"
@@ -53,6 +61,23 @@ export default function Sidebar() {
                 to={`./categorywise/${item}`}
                 className="nav-link text-white"
               >
+                <i className={`bi ${icons[index]}`}></i>
+                <span style={{ paddingLeft: 10 }}>{item}</span>
+              </Link>
+            </li>
+          );
+        })}
+        <li className="text-bg-dark">
+          <hr
+            className="dropdown-divider"
+            style={{ color: 'white', backgroundColor: 'red' }}
+          />
+          --------------------------------------
+        </li>
+        {singleTemplate.map((item, index) => {
+          return (
+            <li>
+              <Link to={`./templates/${item}`} className="nav-link text-white">
                 <i className={`bi ${icons[index]}`}></i>
                 <span style={{ paddingLeft: 10 }}>{item}</span>
               </Link>

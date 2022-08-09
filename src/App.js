@@ -10,6 +10,7 @@ import Upload from './pages/Upload';
 import Dashboard from './pages/dashboard/Dashboard';
 import Projects from './pages/projects/Projects';
 import MarketPlace from './pages/marketplace/MarketPlace';
+import Templates from './pages/templates/Templates';
 import CategoryWise from './components/CategoryWise';
 export default function App() {
   const ProductList = [
@@ -85,6 +86,10 @@ export default function App() {
             <Route path="" element={<Main ProductList={ProductList} />} exact />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/projects" element={<Projects />} />
+            <Route
+              path="/templates/:id"
+              element={<Templates ProductList={ProductList} />}
+            />
             <Route
               path="/marketplace"
               element={<MarketPlace ProductList={ProductList} />}

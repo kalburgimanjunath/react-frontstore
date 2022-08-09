@@ -85,7 +85,11 @@ export default function App() {
             <Route path="" element={<Main ProductList={ProductList} />} exact />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/marketplace" element={<MarketPlace />} exact />
+            <Route
+              path="/marketplace"
+              element={<MarketPlace ProductList={ProductList} />}
+              exact
+            />
           </Routes>
         </div>
       </div>

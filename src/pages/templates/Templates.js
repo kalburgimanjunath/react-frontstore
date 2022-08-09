@@ -1,7 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import FilterList from '../../components/FilterList';
 export default function Templates({ ProductList }) {
+  const { id } = useParams();
+  const category = [
+    'AllTemplates',
+    'Profile',
+    'Landing',
+    'Form',
+    'Portfolio',
+    'Sanctioned',
+  ];
   return (
     <div className="page">
       <div className="px-4 py-5 my-5 text-center">
@@ -17,7 +26,11 @@ export default function Templates({ ProductList }) {
       </div>
       <div>
         <div>
-          <FilterList products={ProductList} categorysearch="all" />
+          <FilterList
+            products={ProductList}
+            categorysearch={id}
+            category={category}
+          />
         </div>
       </div>
     </div>

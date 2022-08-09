@@ -17,7 +17,7 @@ export default function App() {
     {
       id: 1,
       title: 'Product 1',
-      techStack: ['grid', 'javascript', 'es6'],
+      techStack: ['grid', 'javascript', 'form', 'portfolio'],
       productImage: 'https://picsum.photos/200/300',
       demoURL: 'https://picsum.photos/200/300',
       price: '1000',
@@ -25,7 +25,7 @@ export default function App() {
     {
       id: 2,
       title: 'Product 2',
-      techStack: ['reactjs', 'list', 'es6'],
+      techStack: ['reactjs', 'list', 'form'],
       productImage: 'https://picsum.photos/seed/picsum/200/300',
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
       price: '2000',

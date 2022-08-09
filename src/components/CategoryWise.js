@@ -5,7 +5,20 @@ import Footer from './Footer';
 import { useParams, Link } from 'react-router-dom';
 export default function CategoryWise({ ProductList, categorysearch }) {
   const { id } = useParams();
-
+  const category = [
+    'All',
+    'Element',
+    'Form',
+    'Marketing',
+    'Grid',
+    'List',
+    'Navigation',
+    'Modal',
+    'Social',
+    'Complex',
+    'Page',
+    'Other',
+  ];
   return (
     <div
       className="page"
@@ -27,9 +40,17 @@ export default function CategoryWise({ ProductList, categorysearch }) {
       </div>
       <div>
         {id !== 'All' ? (
-          <FilterList products={ProductList} categorysearch={id} />
+          <FilterList
+            products={ProductList}
+            categorysearch={id}
+            category={category}
+          />
         ) : (
-          <FilterList products={ProductList} categorysearch="all" />
+          <FilterList
+            products={ProductList}
+            categorysearch="all"
+            category={category}
+          />
         )}
       </div>
       <Footer />

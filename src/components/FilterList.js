@@ -6,9 +6,11 @@ export const TextStack = ({ items }) => {
     return <span className="badge text-bg-success">{item}</span>;
   });
 };
-export default function FilterList({ products, categorysearch }) {
-  // let categorysearch = 'list';
-  const category = [
+export default function FilterList({
+  products,
+  categorysearch,
+  // category,
+  category = [
     'All',
     'Element',
     'Form',
@@ -21,7 +23,23 @@ export default function FilterList({ products, categorysearch }) {
     'Complex',
     'Page',
     'Other',
-  ];
+  ],
+}) {
+  // let categorysearch = 'list';
+  // const category = [
+  //   'All',
+  //   'Element',
+  //   'Form',
+  //   'Marketing',
+  //   'Grid',
+  //   'List',
+  //   'Navigation',
+  //   'Modal',
+  //   'Social',
+  //   'Complex',
+  //   'Page',
+  //   'Other',
+  // ];
   let filterData;
   if (categorysearch !== 'all') {
     filterData = products.filter((item) => {
@@ -37,7 +55,7 @@ export default function FilterList({ products, categorysearch }) {
 
   return (
     <>
-      <Category Category={category} />
+      {category ? <Category Category={category} /> : null}
       <div className="card-group">
         {filterData.map((item) => {
           return (

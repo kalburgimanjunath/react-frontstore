@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Field } from 'formik';
 export default function Upload() {
   return (
     <div className="page">
       <Formik
-        initialValues={{ price: '$' }}
+        initialValues={{ price: '' }}
         validate={(values) => {
           const errors = {};
           if (!values.name) {
             errors.name = 'Required';
           } else {
-            errors.email = 'Invalid name';
+            errors.name = 'Invalid name';
           }
           return errors;
         }}
@@ -32,7 +32,7 @@ export default function Upload() {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <Form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div>
               <label htmlfor="name">Name</label>
               <input
@@ -42,6 +42,7 @@ export default function Upload() {
                 onBlur={handleBlur}
                 value={values.name}
               />
+              {errors.name && touched.name && errors.name}
             </div>
             <div>
               <label htmlfor="price">
@@ -143,7 +144,7 @@ export default function Upload() {
             >
               Publish
             </button>
-          </Form>
+          </form>
         )}
       </Formik>
     </div>

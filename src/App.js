@@ -52,19 +52,21 @@ export default function App() {
     },
     {
       id: 4,
-      title: 'Product 3',
-      techStack: ['reactjs', 'javascript', 'es6'],
-      productImage: 'https://picsum.photos/seed/picsum/200/300',
-      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      title: 'Signup Form',
+      techStack: ['reactjs', 'javascript', 'es6', 'signup', 'form', 'template'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/cdc715539f77418797d07cf221a19c8d/88b33f4c',
+      demoURL: 'https://incomparable-valkyrie-32ebe5.netlify.app/',
       price: '2000',
     },
     {
       id: 5,
-      title: 'Product 3',
-      techStack: ['reactjs', 'javascript', 'es6'],
-      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      title: 'Single Page - Coming Soon',
+      techStack: ['reactjs', 'javascript', 'es6', 'comingsoon', 'form'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/562411a6ada163c627d13e5c13f3b95b/0089625e',
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
-      price: '2000',
+      price: '20000',
     },
   ];
   return (

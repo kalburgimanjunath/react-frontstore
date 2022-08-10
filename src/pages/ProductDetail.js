@@ -7,6 +7,7 @@ export default function ProductDetail({ ProductList }) {
   const filterData = ProductList.filter((item) => {
     return item.id == id;
   });
+  console.log(filterData[0]);
   return (
     <div className="page">
       <Link to="../">Back to Page</Link>

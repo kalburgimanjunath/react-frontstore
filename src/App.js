@@ -43,11 +43,12 @@ export default function App() {
     },
     {
       id: 6,
-      title: 'Product 3',
-      techStack: ['reactjs', 'javascript', 'es6'],
-      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      title: 'Single Page - Profile',
+      techStack: ['reactjs', 'javascript', 'es6', 'profile', 'template'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/70d9138a29252eeaee02415122ab8054/a010e990',
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
-      price: '2000',
+      price: '20000',
     },
     {
       id: 4,

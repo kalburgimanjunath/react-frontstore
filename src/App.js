@@ -34,11 +34,12 @@ export default function App() {
     },
     {
       id: 3,
-      title: 'Product 3',
-      techStack: ['reactjs', 'javascript', 'es6'],
-      productImage: 'https://picsum.photos/seed/picsum/200/300',
+      title: 'Movid Cards',
+      techStack: ['reactjs', 'javascript', 'es6', 'Movies', 'Card'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/88b6f399263151ae98a9832c5eebbb00/a9ffee6c',
       demoURL: 'https://picsum.photos/seed/picsum/200/300',
-      price: '2000',
+      price: '40000',
     },
     {
       id: 6,

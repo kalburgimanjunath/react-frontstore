@@ -77,6 +77,15 @@ export default function App() {
       demoURL: 'https://bootstrap-5-comingsoon.netlify.app',
       price: '20000',
     },
+    {
+      id: 7,
+      title: 'Single Page - Coming Soon White',
+      techStack: ['reactjs', 'javascript', 'es6', 'comingsoon', 'form'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/601e42d0ac1dbeca180facbd02d5bfd2/e7de2907',
+      demoURL: 'https://react-comingsoon-white.netlify.app',
+      price: '20000',
+    },
   ];
   return (
     <div className="container-fluid" style={{ padding: 0 }}>

@@ -65,16 +65,16 @@ export default function App() {
       techStack: ['reactjs', 'javascript', 'es6', 'comingsoon', 'form'],
       productImage:
         'https://dl.airtable.com/.attachmentThumbnails/562411a6ada163c627d13e5c13f3b95b/0089625e',
-      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'https://react-comingsoon.netlify.app/',
       price: '20000',
     },
     {
       id: 6,
-      title: 'Single Page - Coming Soon',
+      title: 'Single Page - Coming Soon  Bootstrap',
       techStack: ['bootstrap', 'javascript', 'es6', 'comingsoon', 'form'],
       productImage:
         'https://dl.airtable.com/.attachmentThumbnails/562411a6ada163c627d13e5c13f3b95b/0089625e',
-      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'https://bootstrap-5-comingsoon.netlify.app',
       price: '20000',
     },
   ];

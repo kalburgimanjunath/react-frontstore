@@ -21,15 +21,16 @@ export default function App() {
       productImage:
         'https://dl.airtable.com/.attachmentThumbnails/311489f518773bc8248ccb31c4c2d457/01e79636',
       demoURL: 'https://picsum.photos/200/300',
-      price: '1000',
+      price: '100000',
     },
     {
       id: 2,
-      title: 'Product 2',
+      title: 'FrontStore',
       techStack: ['reactjs', 'list', 'form'],
-      productImage: 'https://picsum.photos/seed/picsum/200/300',
-      demoURL: 'https://picsum.photos/seed/picsum/200/300',
-      price: '2000',
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/132abfab02ce8d4ba376c784bc36e2be/c456fc93',
+      demoURL: 'https://grand-naiad-a82b21.netlify.app/',
+      price: '200000',
     },
     {
       id: 3,

@@ -60,23 +60,24 @@ export default function FilterList({
         {filterData.map((item) => {
           return (
             <Link to={`productdetail/${item.id}`}>
-              <div className="card" style={{ margin: 10 }}>
+              <div className="card" style={{ margin: 10, maxWidth: 300 }}>
                 <img
                   src={item.productImage}
                   size={300}
+                  style={{ width: '100%' }}
                   className="card-img-top"
                   alt="..."
                 />
-                <div className="card-body">
+                {/* <div className="card-body">
                   <p className="card-text">{item.title} </p>
-                </div>
+                </div> */}
                 <div className="card-footer">
                   <small className="text-muted">
-                    {item.techStack && item.techStack.length > 0 ? (
+                    {/* {item.techStack && item.techStack.length > 0 ? (
                       <TextStack items={item.techStack} />
                     ) : (
                       ''
-                    )}{' '}
+                    )} */}
                     <span>Price:{item.price}</span>
                     {/* <button
                       type="button"

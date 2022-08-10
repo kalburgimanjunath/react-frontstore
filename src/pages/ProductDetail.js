@@ -28,8 +28,8 @@ export default function ProductDetail({ ProductList }) {
           Buy for {filterData[0].price}
         </button>
       </div>
-      <div>
-        <img src={filterData[0].productImage} width={300} />
+      <div style={{ padding: 20 }}>
+        <img src={filterData[0].productImage} />
       </div>
       <div
         className="modal fade"

@@ -47,7 +47,7 @@ export default function App() {
       techStack: ['reactjs', 'javascript', 'es6', 'profile', 'template'],
       productImage:
         'https://dl.airtable.com/.attachmentThumbnails/70d9138a29252eeaee02415122ab8054/a010e990',
-      demoURL: 'https://picsum.photos/seed/picsum/200/300',
+      demoURL: 'single-page-profile.netlify.app',
       price: '20000',
     },
     {

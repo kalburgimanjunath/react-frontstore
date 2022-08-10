@@ -16,9 +16,10 @@ export default function App() {
   const ProductList = [
     {
       id: 1,
-      title: 'Product 1',
-      techStack: ['grid', 'javascript', 'form', 'portfolio'],
-      productImage: 'https://picsum.photos/200/300',
+      title: 'Profile Card',
+      techStack: ['profile', 'javascript', 'template', 'portfolio'],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/311489f518773bc8248ccb31c4c2d457/01e79636',
       demoURL: 'https://picsum.photos/200/300',
       price: '1000',
     },

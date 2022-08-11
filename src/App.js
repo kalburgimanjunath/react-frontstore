@@ -96,7 +96,7 @@ export default function App() {
       price: '20000',
     },
     {
-      id: 8,
+      id: 9,
       title: 'Sectioned Screen',
       techStack: [
         'reactjs',

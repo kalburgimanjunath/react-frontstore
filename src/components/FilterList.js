@@ -54,7 +54,7 @@ export default function FilterList({
   // console.log(categorysearch);
 
   return (
-    <>
+    <div className="productlist">
       {category ? <Category Category={category} /> : null}
       <div className="card-group">
         {filterData.map((item) => {
@@ -129,6 +129,6 @@ export default function FilterList({
           );
         })}
       </div>
-    </>
+    </div>
   );
 }

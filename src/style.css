@@ -10,3 +10,6 @@ body {
 .page {
   padding: 20px;
 }
+.productlist .card:hover {
+  scale: 1.02;
+}

@@ -95,6 +95,23 @@ export default function App() {
       demoURL: 'https://react-comingsoon-white.netlify.app',
       price: '20000',
     },
+    {
+      id: 8,
+      title: 'Sectioned Screen',
+      techStack: [
+        'reactjs',
+        'javascript',
+        'es6',
+        'comingsoon',
+        'sectioned',
+        'portfolio',
+        'template',
+      ],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/d5df16ae4a6980f7394ff7f559346f62/2318c976',
+      demoURL: 'https://react-sectioned.netlify.app',
+      price: '20000',
+    },
   ];
   return (
     <div className="container-fluid" style={{ padding: 0 }}>

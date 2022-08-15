@@ -2,7 +2,7 @@ import React from 'react';
 export default function UnlockForm() {
   return (
     <div style={{ flex: 1, display: 'flex' }}>
-      <div style={{ marginRight: 15, marginBottom: 10 }}>
+      <div style={{ marginRight: 15 }}>
         <input
           style={{ padding: 10 }}
           type="text"

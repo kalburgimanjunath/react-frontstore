@@ -112,6 +112,40 @@ export default function App() {
       demoURL: 'https://react-sectioned.netlify.app',
       price: '20000',
     },
+    {
+      id: 10,
+      title: 'React Pagination Screen',
+      techStack: [
+        'reactjs',
+        'javascript',
+        'es6',
+        'comingsoon',
+        'sectioned',
+        'portfolio',
+        'template',
+      ],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/d5df16ae4a6980f7394ff7f559346f62/2318c976',
+      demoURL: 'https://react-sectioned.netlify.app',
+      price: '20000',
+    },
+    {
+      id: 10,
+      title: 'HUBL Hubli Fish Marketplace',
+      techStack: [
+        'reactjs',
+        'javascript',
+        'es6',
+        'comingsoon',
+        'sectioned',
+        'portfolio',
+        'template',
+      ],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/7304a061e4c6e378b6f192b3e36376de/8bfaa1bb',
+      demoURL: 'https://hubli-nonveg.netlify.app',
+      price: '30000',
+    },
   ];
   return (
     <div className="container-fluid" style={{ padding: 0 }}>

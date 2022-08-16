@@ -125,7 +125,7 @@ export default function App() {
         'template',
       ],
       productImage:
-        'https://dl.airtable.com/.attachmentThumbnails/d5df16ae4a6980f7394ff7f559346f62/2318c976',
+        'https://dl.airtable.com/.attachmentThumbnails/62168de2db304d253ea912176a125062/1a04321a',
       demoURL: 'https://react-sectioned.netlify.app',
       price: '20000',
     },

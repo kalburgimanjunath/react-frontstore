@@ -130,7 +130,7 @@ export default function App() {
       price: '20000',
     },
     {
-      id: 10,
+      id: 11,
       title: 'HUBL Hubli Fish Marketplace',
       techStack: [
         'reactjs',

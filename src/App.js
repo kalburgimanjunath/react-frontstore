@@ -146,6 +146,23 @@ export default function App() {
       demoURL: 'https://hubli-nonveg.netlify.app',
       price: '30000',
     },
+    {
+      id: 12,
+      title: 'Remote Tech Jobs/Companies',
+      techStack: [
+        'reactjs',
+        'javascript',
+        'es6',
+        'comingsoon',
+        'sectioned',
+        'portfolio',
+        'template',
+      ],
+      productImage:
+        'https://dl.airtable.com/.attachmentThumbnails/d24546127fcdc253f67f26ab544fe41c/e6ad62d1',
+      demoURL: 'https://remotecompanies.netlify.app/',
+      price: '30000',
+    },
   ];
   return (
     <div className="container-fluid" style={{ padding: 0 }}>
